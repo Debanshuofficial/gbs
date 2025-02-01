@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#card1">a</a></li>
+        <li><a href="#card2">a</a></li>
+        <li><a href="#card3">a</a></li>
+        <li><a href="#card4">a</a></li>
+    </ul>
+    <div class="main2">
+        <div class="main">
+            <div id="card1" class="cards"><div class="cardb">cb1</div></div>
+            <div id="card2" class="cards"><div class="cardb">cb2</div></div>
+            <div id="card3" class="cards"><div class="cardb">cb3</div></div>
+            <div id="card4" class="cards"><div class="cardb">c4</div></div>
+        </div>
+    </div>
+
+    <style>
+        .main2{
+            padding: 10px;
+            background-color: aqua;
+        }
+        .main {
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+
+        .cards{
+            flex-shrink: 0;
+            flex-grow: 0;
+            width: 100%;
+            height: 200px;
+            background-color: red;
+        }
+        .cardb{
+            width: auto;
+            height: 97%;
+            background-color: blue;
+            border: 3px solid black;
+        }
+        
+    </style>
+</body>
+</html>
