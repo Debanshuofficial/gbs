@@ -6,48 +6,46 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li><a href="#card1">a</a></li>
-        <li><a href="#card2">a</a></li>
-        <li><a href="#card3">a</a></li>
-        <li><a href="#card4">a</a></li>
-    </ul>
-    <div class="main2">
-        <div class="main">
-            <div id="card1" class="cards"><div class="cardb">cb1</div></div>
-            <div id="card2" class="cards"><div class="cardb">cb2</div></div>
-            <div id="card3" class="cards"><div class="cardb">cb3</div></div>
-            <div id="card4" class="cards"><div class="cardb">c4</div></div>
-        </div>
+    <div class="row2">
+        <div class="cont">this is the container</div>
+        <div class="cont"></div>
+        <div class="cont"></div>
     </div>
 
-    <style>
-        .main2{
-            padding: 10px;
-            background-color: aqua;
-        }
-        .main {
-            display: flex;
-            overflow: hidden;
-            align-items: center;
-            width: 100%;
-            background-color: antiquewhite;
-        }
+     <input type="radio" name="gender" >
+     <label for="">Male</label>
+     <input type="radio" name="gender" checked>
+    <label for="">Female</label>
 
-        .cards{
-            flex-shrink: 0;
-            flex-grow: 0;
-            width: 100%;
-            height: 200px;
-            background-color: red;
+    <input type="checkbox" checked>
+    <label for="">TV</label>
+    <input type="checkbox">
+    <label for="">AC</label>
+    <input type="checkbox">
+    <label for="">Fridge</label>
+    <input type="checkbox" checked>
+    <label for="">LPG</label>
+    <input type="checkbox" checked>
+    <label for="">Bike</label>
+    <input type="checkbox" checked>
+    <label for="">Cycle</label>
+    <style>
+        .row2{
+            display: flex;
         }
-        .cardb{
-            width: auto;
-            height: 97%;
-            background-color: blue;
+        .cont{
+            max-width: 645px;
+            min-width: 90%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            background-color: aquamarine;
             border: 3px solid black;
         }
-        
+        @media screen and (max-width: 420px) {
+            .row1{
+                flex-direction: column;
+            }
+        }
     </style>
 </body>
 </html>
